@@ -60,7 +60,7 @@ for (let i = 0; i < blocksRows; i++) {
 function drawBall() {
   ctx.beginPath();
   ctx.arc(ball.x, ball.y, ball.size, 0, 2 * Math.PI);
-  ctx.fillStyle = 'skyblue';
+  ctx.fillStyle = '#70d6ff';
   ctx.fill();
   ctx.closePath();
 }
@@ -69,7 +69,7 @@ function drawBall() {
 function drawPaddle() {
   ctx.beginPath();
   ctx.rect(paddle.x, paddle.y, paddle.w, paddle.h);
-  ctx.fillStyle = 'skyblue';
+  ctx.fillStyle = '#70d6ff';
   ctx.fill();
   ctx.closePath();
 }
@@ -87,7 +87,7 @@ function drawBlocks() {
     column.forEach((block) => {
       ctx.beginPath();
       ctx.rect(block.x, block.y, block.w, block.h);
-      ctx.fillStyle = block.visible ? 'skyblue' : 'transparent';
+      ctx.fillStyle = block.visible ? '#70d6ff' : 'transparent';
       ctx.fill();
       ctx.closePath();
     });

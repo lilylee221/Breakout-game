@@ -1,8 +1,13 @@
 :root {
   /* color */
-  --primary-color: skyblue;
+  --primary-color: #ffd670;
   --black-color: #131313;
   --dark-gray-color: #314048;
+  --background: linear-gradient(
+    0deg,
+    rgba(112, 214, 255, 1) 0%,
+    rgba(255, 112, 166, 1) 100%
+  );
   /* border */
   --basic-border-radius: 5px;
 }
@@ -11,10 +16,14 @@
   margin: 0;
 }
 body {
-  background-color: var(--primary-color);
-  margin: 0;
   height: 100vh;
+  background: var(--background);
+  margin: 0;
   position: relative;
+}
+.container {
+  width: 800px;
+  margin: auto;
 }
 button {
   padding: 10px;
@@ -36,17 +45,19 @@ button:active {
 h1 {
   text-align: center;
   font-size: 2rem;
+  margin: 2rem;
+  color: var(--black-color);
 }
 .rules__btn {
   width: 6rem;
   height: 2rem;
-  margin: 2rem 4rem;
+  margin-bottom: 2rem;
 }
 .rules__slider {
   width: 15rem;
   height: 100vh;
   position: absolute;
-  top: 0;
+  top: -35px;
   left: 0;
   background-color: var(--dark-gray-color);
   color: white;
