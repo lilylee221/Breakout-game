@@ -12,5 +12,5 @@ A Breakout game written in pure Vanilla JavaScript and rendered on HTML5 canvas.
  * CSS
  * JavaScript
 
-### Game diplyment
+### Game diployment
 https://breakout-game-lily.netlify.app/
